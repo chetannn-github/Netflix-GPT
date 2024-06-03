@@ -1,0 +1,33 @@
+#movie-card{
+    max-height: 100px;
+    width: 150px;
+
+    /* background: #3f0ba0; */
+
+    
+
+    border-radius: 5px;
+    flex-shrink: 0;
+    /* overflow: hidden; */
+    position: relative;
+    transition: all 0.5s 0.2s ease-in;
+
+}
+
+#movie-card img{
+    height: 100px;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+}
+
+
+#movie-card:hover{
+    height: 200px;
+    width: 200px;
+    /* background: #a37d7d; */
+    z-index: 99;
+    position: relative;
+    
+
+}

@@ -1,0 +1,63 @@
+#explore{
+    width: 100vw;
+    height: fit-content;
+    position: relative;
+    /* background: #c59b9b; */
+    
+}
+
+
+#movie-list-container{
+    min-width: 100vw;
+    position: relative;
+   
+    /* background: #19183d; */
+    margin-bottom: 20px;
+    
+    padding-left: 30px;
+    z-index: 99;
+   
+    position: relative;
+
+    top: -150px;
+
+    
+    
+}
+
+
+
+
+#movie-list-container #title{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+
+#movielist{
+     display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 10px;
+    z-index: 5;
+    position: relative;
+    /* background: #894747; */
+ 
+}
+
+
+
+@media (max-width: 500px) {
+    #movie-list-container{
+        padding-left: 15px;
+       top: 0px;
+    
+    }
+
+    
+    
+    
+  
+  }
+
+

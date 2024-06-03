@@ -1,0 +1,38 @@
+@font-face {
+    font-family: gilroy;
+    src: url(../font/Gilroy-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+    /* overflow-x: hidden; */
+
+}
+
+*::-webkit-scrollbar{
+    display:none;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background: #000000;
+    color: white;
+    /* overflow: hidden; */
+    position: relative;
+    user-select: none;
+}
+
+a{
+    
+    color: rgb(255, 255, 255);
+    
+}
+
+#main{
+    position: relative;
+    width: 100vw;
+    
+}
