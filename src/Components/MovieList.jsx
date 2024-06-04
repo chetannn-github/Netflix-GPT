@@ -13,7 +13,7 @@ const MovieList = ({movieList , title}) => {
         <h5>{title}</h5>
       </div>
       <div id="movielist">
-        {movieList.map ((item,index)=>(<MovieCard key={index} posterId={item.poster_path } overview = {item.overview} ratings = {item.vote_average} title = {item.title}/>))}
+        {movieList.map ((item,index)=>(<MovieCard id={item.id} key={index} posterId={item.poster_path } overview = {item.overview} ratings = {item.vote_average} title = {item.title}/>))}
       </div>
     </div>
     
