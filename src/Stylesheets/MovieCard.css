@@ -1,6 +1,6 @@
 #movie-card{
-    max-height: 100px;
-    width: 150px;
+    max-height: 200px;
+    width: 190px;
 
     /* background: #3f0ba0; */
 
@@ -15,19 +15,11 @@
 }
 
 #movie-card img{
-    height:80px;
+    height:180px;
     width: 100%;
     position: relative;
     object-fit: cover;
+    object-position: top;
 }
 
 
-#movie-card:hover{
-    height: 200px;
-    width: 200px;
-    /* background: #a37d7d; */
-    z-index: 99;
-    position: relative;
-    
-
-}

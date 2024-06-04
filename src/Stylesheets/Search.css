@@ -45,6 +45,7 @@
     background:#E50914 ;
     color: #f9f9f9;
     font-weight: 600;
+    cursor: pointer;
 }
 
 
@@ -86,6 +87,6 @@
     padding: 3vw 5vw;
     border-radius: 10px;
    
-  cursor: pointer;
+  
 }
   }

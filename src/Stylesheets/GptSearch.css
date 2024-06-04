@@ -1,7 +1,7 @@
 #gpt-page{
     height: fit-content;
-    max-width: 100vw;
-    overflow-x: hidden;
+    width: 100vw;
+    
 }
 
 #search-results{
@@ -10,6 +10,9 @@
     position: absolute;
     top: 30vh;
     background: #0000003e;
+    width: 100vw;
+    /* overflow: scroll; */
 
+    z-index: 99;
    
 }

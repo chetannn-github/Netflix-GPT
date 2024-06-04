@@ -4,6 +4,7 @@ import "../Stylesheets/MovieCard.css"
 
 const MovieCard = ({posterId,title,ratings,overview}) => {
   // console.log(posterId)
+  if(!posterId){return}
   return (
     <div id="movie-card">
         <img src={`${POSTER_URL}${posterId}`} alt="" />

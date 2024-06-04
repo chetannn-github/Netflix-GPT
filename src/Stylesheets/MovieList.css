@@ -4,6 +4,7 @@
     position: relative;
     /* background: #c59b9b; */
     
+    
 }
 
 
@@ -19,7 +20,8 @@
    
     position: relative;
 
-    top: -150px;
+    /* top: -150px; */
+    
 
     
     
@@ -35,7 +37,7 @@
 
 
 #movielist{
-     display: flex;
+    display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
     gap: 10px;
