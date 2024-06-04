@@ -29,8 +29,7 @@
     transform: translate(-50%,-50%);
 
 } 
-
-#main-movie #movie-info{
+#movie-info{
     position: relative;
     color: white;
     width: 40%;
@@ -40,7 +39,7 @@
     bottom: 0%;
     /* transform: translate(0,-50%); */
 }
-#main-movie #movie-info #overview{
+ #movie-info #overview{
     position: relative;
     width: 100%;
     max-height: 100px;
@@ -50,13 +49,12 @@
     
 }
 
-#main-movie #movie-info #title{
+ #movie-info #title{
     font-size: 4vw;
     font-weight: 600;
     margin-bottom: 10px;
 }
-
-#main-movie #movie-info #buttons div{
+ #movie-info #buttons div{
     
     width: fit-content;
     background: #fcfcfc;
@@ -68,7 +66,7 @@
     color: black; 
 }
 
-#main-movie #movie-info #buttons div#more{
+ #movie-info #buttons div#more{
     color: rgb(250, 243, 243); 
     background: #80747480;
 }
@@ -83,23 +81,24 @@
        
     } 
 
-    #main-movie #movie-info{
+     #movie-info{
         width: 100%;
         padding-left: 15px;
         bottom: 0;
         left: 0;
+        top: 50%;
         transform: translate(0,0);
         /* background: #000; */
     
     }
     
     
-    #main-movie #movie-info #title{
+     #movie-info #title{
         font-size: 30px;
        
     }
     
-    #main-movie #movie-info #buttons div{
+     #movie-info #buttons div{
         
         width: fit-content;
        
@@ -120,7 +119,7 @@
   @media (max-width: 768px) {
    
  
-    #main-movie #movie-info{
+     #movie-info{
         width: 90%;
         
     
