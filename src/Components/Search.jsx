@@ -39,7 +39,7 @@ const Search = () => {
 
   return (<>
     <div id="search">
-        <input ref={searchTxt}  type="text" placeholder='What do you want to watch?'/>
+        <input ref={searchTxt}  type="text" placeholder='🎬 Choose your adventure... 🎬'/>
         <button onClick={()=>handleSearch(searchTxt.current.value)}>Search</button>
 
     </div>
