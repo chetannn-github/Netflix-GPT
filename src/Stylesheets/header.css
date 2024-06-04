@@ -81,10 +81,11 @@
 
 
     #nav #user {
-        gap: 5px;
+        /* background: #000; */
+        gap: 1px;
     }
     #nav #user h4{
-        font-size: 3vw;
+        font-size: 2.5vw;
         
     }
     #nav #user h3{
@@ -94,8 +95,20 @@
 
     
 #nav #logo{
-    height: 80%;
+    height: 60%;
 }
+#nav #user  button{
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-right:5px;
+   
+    font-size: 2.4vw;
+    
+
+}
+
+
+
 
     
   }

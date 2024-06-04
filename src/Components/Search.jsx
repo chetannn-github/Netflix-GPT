@@ -1,19 +1,20 @@
 import React, { useRef } from 'react';
 import "../Stylesheets/Search.css"
-import "../Stylesheets/MovieList.css"
+
 import { useDispatch, useSelector } from 'react-redux';
 import { modifySearchTxt } from '../utils/reduxStore/searchSlice';
 import { openai } from '../utils/openai';
 import { TMDB_API_OPTIONS } from '../../public/utils/Constants';
 
 import { addSearchResult } from '../utils/reduxStore/movieSlice';
-import MovieCard from './MovieCard';
+
+
 
 const Search = () => {
     let searchTxt = useRef(null);
     let dispatch = useDispatch();
-   let searchMovieList= useSelector((store)=>(store.movies.searchResult));
-  //  console.log(searchMovieList);
+  
+ 
     let handleSearch = async(searchTxt) =>{
         dispatch(modifySearchTxt(searchTxt));
 
@@ -43,18 +44,8 @@ const Search = () => {
 
     </div>
     
-      {
-       searchMovieList &&searchMovieList.map((list)=>(
-        
-        <div id="movielist">
-        {list.results.map ((item)=>(<MovieCard  posterId={item.poster_path} overview = {item.overview} ratings = {item.vote_average} title = {item.title}/>))}
-      </div>
-      
-     )) }
-    
-
-
-    
+ 
+     
     
       
    

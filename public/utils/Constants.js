@@ -10,4 +10,4 @@ export const TMDB_API_OPTIONS ={
 
 export const POSTER_URL = 'https://image.tmdb.org/t/p/w300_and_h450_bestv2';
 
-export const OPENAI_API_KEY = "sk-proj-scUPodda7KxOKi8lETLyT3BlbkFJEj3Rpc9dYqbzxlYp7cuG";
+export const OPENAI_API_KEY = "sk-proj-rCNeQ2rJXKME5H3yMs1oT3BlbkFJYRZHd4JxH6zE94bl4pp1";

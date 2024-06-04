@@ -15,7 +15,7 @@
 }
 
 #movie-card img{
-    height: 100px;
+    height:80px;
     width: 100%;
     position: relative;
     object-fit: cover;
