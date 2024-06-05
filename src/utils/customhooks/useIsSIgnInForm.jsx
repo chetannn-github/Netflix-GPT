@@ -2,7 +2,7 @@ import { useState } from "react";
 
 
 const useIsSignInForm = () => {
-    let [isSignInForm, setIsSignInForm] = useState(1);
+    let [isSignInForm, setIsSignInForm] = useState(0);
     let toggleSignInForm = () => {
     setIsSignInForm(!isSignInForm);
     }
