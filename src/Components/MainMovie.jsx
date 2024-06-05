@@ -11,9 +11,9 @@ const MainMovie = () => {
     let movies = useSelector((store)=>store.movies.nowPlaying);
     if (!movies) return;
   
-    let  mainMovie =(movies[5]);
+    // let  mainMovie =(movies[6]);
 
-    // mainMovie = movies[Math.floor(Math.random() * 20)];
+    let mainMovie = movies[6];
     let {title ,overview,id} =  mainMovie;
     
     

@@ -18,12 +18,14 @@ const Search = () => {
     let handleSearch = async(searchTxt) =>{
         dispatch(modifySearchTxt(searchTxt));
 
-        let apiInput = `Give an output of only 5 movies for this query -${searchTxt} in the form of string separated by commas eg- "sholay,ready,batman,superman,spiderman"`;
+        let apiInput = `Please provide a list of up to six movies based on the query "${searchTxt}". The movies should be listed as a comma-separated string (e.g., "Sholay,Ready,Batman,Superman,Spiderman"). If the query includes the title of an actual movie, please return five movies featuring the same actor(s), including the queried movie.`;
+
         const gptResults= await openai.chat.completions.create({
           messages: [{ role: 'user', content: apiInput }],
           model: 'gpt-3.5-turbo',
         });
        let moviesListArray=  gptResults.choices[0].message.content.split(",");
+       console.log(moviesListArray)
 
     let movie = moviesListArray.map(async(item,index) =>{
       const url = `https://api.themoviedb.org/3/search/movie?query=${moviesListArray[index]}&include_adult=false&page=1`;
