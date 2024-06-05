@@ -15,7 +15,11 @@ console.log(videoData);
     
     let trailerData = videoData.filter((item)=>(item.type==="Trailer"));
 
-    if (trailerData.length){trailerData = trailerData[0]};
+    if (trailerData.length){
+      trailerData = trailerData[0];
+    }else{
+      trailerData = videoData[0];
+    }
    setBgData(trailerData.key);
   }
 
