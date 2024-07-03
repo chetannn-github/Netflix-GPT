@@ -1,6 +1,7 @@
 import React from 'react'
 import "../Stylesheets/MainMovie.css";
 import useTrailerVideo from '../utils/customhooks/useTrailerVideo';
+
 const VideoBg = ({movieId}) => {
     const ytId = useTrailerVideo(movieId);
     if (!(ytId)) {return}

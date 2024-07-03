@@ -8,7 +8,7 @@ const usePopularMovies = () =>{
     useEffect(()=>{fetchNowPlayingMovies()},[]);
 
     let fetchNowPlayingMovies = async()=>{
-        let data = await fetch('https://api.themoviedb.org/3/movie/popular?language=en-US&page=1',TMDB_API_OPTIONS);
+        let data = await fetch('https://api.themoviedb.org/3/movie/popular?language=EN-IN&page=1',TMDB_API_OPTIONS);
         let movieList = await data.json();
 
         dispatch(addNowPlaying(movieList.results))

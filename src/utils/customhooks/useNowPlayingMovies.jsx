@@ -19,11 +19,6 @@ const useNowPlayingMovies = () =>{
   }
 
   return 
-    
-    
-  
-  
-
 
 }
 export default useNowPlayingMovies;

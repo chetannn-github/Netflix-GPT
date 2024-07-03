@@ -12,8 +12,6 @@ export const Login = () => {
   const name = useRef(null);
 
   let { isSignInForm, toggleSignInForm} = useIsSignInForm();
-  
-
   let {handleSubmitForm ,errorMsg} = useHandleFormSubmit(email,password,isSignInForm,name);
   
 

@@ -18,25 +18,23 @@ export const Header = () => {
   const userName = useSelector((store) =>store.user?.displayName);
   const isGpt = useSelector((store)=>store.isGpt);
   
-let handleToggleGptPage =() =>{
+  let handleToggleGptPage =() =>{
     dispatch(toggleGpt());
 }
  
   
   useEffect(()=>{
     const unsuscribe = onAuthStateChanged(auth,(user)=>{
-    if(user){
-      
-      const {uid,email, displayName} = user;
-      dispatch(addUser({uid,email,displayName}));
-      navigate("/");
-    }
-    else{
-      console.log(user)
-      dispatch(removeUser());
-      navigate('/login');
-    }
-  });
+      if(user){
+        const {uid,email, displayName} = user;
+        dispatch(addUser({uid,email,displayName}));
+        // navigate("/");
+      }else{
+      // console.log(user)
+        dispatch(removeUser());
+        navigate('/login');
+      }
+    });
   // unsuscribe when component is unmounted
   return ()=>unsuscribe();
 },[])

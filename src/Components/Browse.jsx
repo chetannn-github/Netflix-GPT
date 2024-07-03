@@ -12,7 +12,7 @@ import GptSearch from './GptSearch';
 export const Browse = () => {
   const isGpt = useSelector((store)=>store.isGpt);
   
-    useNowPlayingMovies();
+  useNowPlayingMovies();
   usePopularMovies();
   useTopRated();
   return (

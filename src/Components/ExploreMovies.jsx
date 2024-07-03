@@ -11,9 +11,9 @@ const ExploreMovies = () => {
   // console.log(movieList[0])
   return (
     <div id="explore">
-      <MovieList title="Now Playing "movieList={movieList}/>
-      <MovieList title = "Popular " movieList={popular}/>
-      <MovieList title = "TopRated " movieList={topRated}/>
+      <MovieList title="Now Playing" movieList={movieList}/>
+      <MovieList title = "Popular "  movieList={popular}/>
+      <MovieList title = "TopRated"  movieList={topRated}/>
     </div>
   )
 }

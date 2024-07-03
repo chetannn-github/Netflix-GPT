@@ -7,12 +7,14 @@ import MovieInfo from './MovieInfo';
 
 
 
+
 export const Body = () => {
+  
  
   const appRouter = createBrowserRouter([
     {
       path:"/login",
-      element : <Login/>
+      element :<Login/> 
     },
     {
       path:"/signup",

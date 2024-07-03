@@ -13,7 +13,7 @@ const MainMovie = () => {
   
     // let  mainMovie =(movies[6]);
 
-    let mainMovie = movies[6];
+    let mainMovie = movies[8];
     let {title ,overview,id} =  mainMovie;
     
     

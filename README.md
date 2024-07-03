@@ -1,8 +1,27 @@
-# React + Vite
+# NETFLIX-GPT - AI-Powered Movie Search Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Preview](/public/assets/preview.png)
+![Preview](/public/assets/preview2.png)
+![Preview](/public/assets/preview3.png)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Run Locally
+
+### Setup .env file
+
+```js
+
+VITE_API_KEY =OPEN_KEY;
+```
+
+### Install dependencies
+
+```shell
+npm install
+```
+
+### Start the app
+
+```shell
+npm run dev
+```

@@ -7,7 +7,7 @@ import searchReducer from "./searchSlice"
 const appStore  = configureStore({
     
     reducer:{
-        user:userReducer ,
+        user:userReducer,
         movies:movieReducer,
         isGpt:gptReducer,
         search:searchReducer,

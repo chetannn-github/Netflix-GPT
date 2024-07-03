@@ -11,7 +11,7 @@ const useTrailerVideo =(id) =>{
     let videoList=  await fetch(`https://api.themoviedb.org/3/movie/${id}/videos?language=en-US`, TMDB_API_OPTIONS);
     let json = await videoList.json();
     let videoData = json.results;  //array of object
-console.log(videoData);
+    // console.log(videoData);
     
     let trailerData = videoData.filter((item)=>(item.type==="Trailer"));
 
